@@ -9,7 +9,8 @@ from utils import (total_sales, average_sales, to_grade, grade_to_incentive,
 st.set_page_config(page_title="매출 분석 대시보드", layout="wide")
 
 # 상단 배너 이미지 (banner.png 파일을 함께 둘 것)
-st.image("banner.png", width="stretch")
+st.image("banner.png", use_container_width=True)
+
 st.title("지점 매출 분석 대시보드")
 
 QUARTERS = ["1분기", "2분기", "3분기"]
